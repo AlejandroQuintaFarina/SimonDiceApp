@@ -18,14 +18,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bazul"
         android:layout_width="124dp"
         android:layout_height="108dp"
         android:layout_marginStart="57dp"
         android:layout_marginTop="147dp"
         android:layout_marginEnd="230dp"
         android:layout_marginBottom="476dp"
-        android:text="Button"
+        android:text="Azul"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -35,42 +35,86 @@
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bamarillo"
         android:layout_width="113dp"
         android:layout_height="104dp"
         android:layout_marginStart="241dp"
         android:layout_marginTop="147dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="480dp"
-        android:text="Button"
+        android:text="Amarillo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/brojo"
         android:layout_width="123dp"
         android:layout_height="133dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="310dp"
         android:layout_marginEnd="230dp"
         android:layout_marginBottom="288dp"
-        android:text="Button"
+        android:text="Rojo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/bverde"
         android:layout_width="128dp"
         android:layout_height="131dp"
         android:layout_marginStart="234dp"
         android:layout_marginTop="319dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="281dp"
-        android:text="Button"
+        android:text="Verde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+
+
+    android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />/>
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/binicio"
+        android:layout_width="108dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="83dp"
+        android:text="Play  "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+    <TextView
+        android:id="@+id/nronda"
+        android:layout_width="87dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="494dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="194dp"
+        android:text="@string/_0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
