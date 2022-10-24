@@ -1,49 +1,34 @@
 package com.example.simondiceapp
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-
-    var secuencia = ArrayList<String>()
-    var ronda = 0
-    var numero = 4
-    var comprobaciones = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layoutsimon)
+    }
 
-        binicio.setOnClickListener {
-            toast("Nueva partida")
-            ronda=1
-            numero=4
-            comprobaciones =4
-            nronda.setText(ronda.toString())
-            ncomprobaciones.setText("0")
+    var resultado : String = "Correcto"
+    var secuencia = ArrayList<String>()
+    var select = ArrayList<String>()
+    val binicio : Button = findViewById(R.id.binicio)
 
+    fun iniciarPartida(){
+        GenerarSecuencia()
+        if(resultado=="Acierto"){
+            GenerarSecuencia()
         }
-
-        bazul.setOnCLickListener {
-
+        else{
+            println("Fallaste, la secuencia era " + secuencia + " y fallaste en " + select + " \n Llegaste hasta la ronda: " + secuencia.size)
         }
+    }
 
-        bamarillo.setOnClickListener {
-
-        }
-
-        bverde.setOnClickListener {
-
-        }
-
-        brojo.setOnClickListener {
-
-        }
-
-
-
-
-
+        val bamarillo : Button = findViewById(R.id.bamarillo)
+        val bazul : Button = findViewById(R.id.bazul)
+        val bverde : Button = findViewById(R.id.bverde)
+        val brojo : Button = findViewById(R.id.brojo)
 
     }
 
