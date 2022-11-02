@@ -3,95 +3,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="183dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="171dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="170dp"
-        android:text="Simon Dice"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bazul"
-        android:layout_width="124dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginEnd="230dp"
-        android:layout_marginBottom="476dp"
-        android:text="Azul"
+        android:layout_width="48dp"
+        android:layout_height="18dp"
+        android:text="@string/Round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        app:layout_constraintVertical_bias="0.058" />
+
 
     <Button
-        android:id="@+id/bamarillo"
-        android:layout_width="113dp"
-        android:layout_height="104dp"
-        android:layout_marginStart="241dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="480dp"
-        android:text="Amarillo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/Rojo"
+        android:layout_width="187dp"
+        android:layout_height="308dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff0000"
+        android:enabled="false"
+        android:text="@string/Rojo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <Button
-        android:id="@+id/brojo"
-        android:layout_width="123dp"
-        android:layout_height="133dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginEnd="230dp"
-        android:layout_marginBottom="288dp"
-        android:text="Rojo"
+        android:id="@+id/Verde"
+        android:layout_width="187dp"
+        android:layout_height="308dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00ff00"
+        android:enabled="false"
+        android:text="@string/Verde"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/bverde"
-        android:layout_width="128dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="234dp"
-        android:layout_marginTop="319dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="281dp"
-        android:text="Verde"
+        android:id="@+id/Amarillo"
+        android:layout_width="187dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#fff000"
+        android:enabled="false"
+        android:text="@string/Amarillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/Azul"
+        android:layout_width="187dp"
+        android:layout_height="308dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#000fff"
+        android:text="@string/Azul"
+        android:enabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/binicio"
-        android:layout_width="108dp"
+        android:id="@+id/Comenzar"
+        android:layout_width="75dp"
         android:layout_height="69dp"
-        android:layout_marginStart="163dp"
-        android:layout_marginTop="605dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginBottom="83dp"
-        android:text="Play  "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/bordes_redondos"
+        android:text="@string/Comenzar"
+        android:enabled="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="80dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
